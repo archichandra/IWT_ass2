@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #add8e6; 
+        }
+        header {
+            background-image: url('Black Minimalist Creative Portfolio - Presentation (1).jpg');
+            background-size: cover;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        section h2 {
+            color: #333;
+            cursor: pointer; 
+        }0
+        .details {
+            display: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .card {
+            width: 300px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .card-content {
+            padding: 20px;
+        }
+    </style>
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>ANUSHKA MISHRA</h1>
+        <p>An online portal to showcase all my projects and talents!</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#services">Projects</a>
+        <a href="#contact">Contact</a>
+        
+
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our site where I've showcased my talents and projects: </p>
+<p> Some of my projects are dispalyed as follows: </p>
+
+        <div class="container">
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\The Kitchens.jpeg" alt="Service 1">
+                <div class="card-content" onclick="toggleDetails('details1')">
+                    <h3>Restaurant Menu</h3>
+                    <p>A webpage showcasing a <a href="#home">restaurant's menu</a>.</p>
+                </div>
+                <div class="details" id="details1">
+                   
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\Reconsidering the Aesthetics of Protest.jpeg" alt="Service 2">
+                <div class="card-content" onclick="toggleDetails('details2')">
+                    <h3>Sticky Notes</h3>
+                    <p>A webpage showcasing a <a href="#home">notepad</a> or sticky notes.</p>
+                </div>
+                <div class="details" id="details2">
+                    
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\food delivery mobile app.jpeg" alt="Service 3">
+                <div class="card-content" onclick="toggleDetails('details3')">
+                    <h3>Flutter App</h3>
+                    <p>A website showcasing <a href="#home">food service app</a>made through flutter as frontend and firebase as backend.</p>
+                </div>
+                <div class="details" id="details3">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p><h2>"All About Me!"</h2>
+
+<p>I am a dedicated web developer with a strong passion for crafting visually stunning and functional websites.</p>
+<p> Armed with a solid skill set in HTML, CSS, and JavaScript, I strive to create seamless user experiences that captivate and engage audiences.</p>
+<p> With a keen eye for design and a commitment to staying updated with the latest web development trends, I am driven to deliver innovative solutions that exceed expectations.</p>
+
+
+        <p></p>
+        <p></p>
+    </section>
+    <section id="services">
+        <h2>Talents</h2>
+        <div class="container">
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\download.jpeg" alt="Service 1">
+                <div class="card-content" onclick="toggleDetails('details1')">
+                    <h3>JAVA</h3>
+                    <p></p>
+                </div>
+                <div class="details" id="details1">
+                    <p></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\Pinterest _ Study motivation inspiration, Study motivation, Study inspiration.jpeg" alt="Service 2">
+                <div class="card-content" onclick="toggleDetails('details2')">
+                    <h3>C++</h3>
+                    <p></p>
+                </div>
+                <div class="details" id="details2">
+                   
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\mishr\Downloads\Learn Python – Free Python Courses for Beginners.jpeg" alt="Service 3">
+                <div class="card-content" onclick="toggleDetails('details3')">
+                    <h3>PYTHON</h3>
+                    <p></p>
+                </div>
+                <div class="details" id="details3">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+</section>
+  
+    
+   
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me for any inquiries or feedback!</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p>Email: <a href="mishraanushka6989613@gmail.com">mishraanushka6989613@gmail.com</a></p>
+<p>LinkedIn: <a href="siosjfoasjofjaposjfpsjef">Anushka Mishra</a></p>
+        <p>Phone: +91 9305353935</p>
+        <p>Address: 475 Sector 'C' Vishwa Bank Barra Kanpur, India</p>
+    </section>
+ <section id="end">
+        <img src="C:\Users\mishr\Downloads\Black White Grayscale Portfolio Presentation.jpg" width ="1450">
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 Anushka's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
